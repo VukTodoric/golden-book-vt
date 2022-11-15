@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  list-style: none;
+}
+/**************** Layout and Global styles *************/
+body {
+  height: 100vh;
+  background: url("../images/golden-book-image.png") no-repeat black 5% 50%;
+  opacity: 0.9;
+}
+header {
+  height: 5%;
+  background: linear-gradient(
+    360deg,
+    rgba(23, 22, 22, 0.9783263647255778) 3%,
+    rgba(57, 54, 54, 0.9783263647255778) 52%,
+    rgba(102, 98, 98, 1) 100%,
+    rgba(165, 162, 162, 1) 100%
+  );
+  padding: 0.5rem;
+  align-items: center;
+  line-height: 1;
+}
+main {
+  height: 90%;
+  padding: 0% 20%;
+}
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer {
+  height: 5%;
+  background-color: black;
+  padding: 1.5rem;
+  color: ivory;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  background: rgb(23, 22, 22);
+  background: linear-gradient(
+    180deg,
+    rgba(23, 22, 22, 0.9783263647255778) 3%,
+    rgba(57, 54, 54, 0.9783263647255778) 52%,
+    rgba(102, 98, 98, 1) 100%,
+    rgba(165, 162, 162, 1) 100%
+  );
+}
+article {
+  width: 30%;
+  background-color: ivory;
+  border-radius: 1%;
+  margin: 1% 0;
+  padding: 1%;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: ivory;
+}
+.wrapper-for-logo-and-btn,
+.artcle-content,
+#searchAndFilter,
+header {
+  display: flex;
+  justify-content: space-between;
+}
+/*********************************************************/
+
+/************** Header and Side navigation ***************/
+h1 a {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+#toggleBtn {
+  color: ivory;
+  margin: 0 3.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.sidenav {
+  height: 90%;
+  width: 0;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 0;
+  background-color: #111;
+  opacity: 0.8;
+  overflow: hidden;
+  padding: 1.5rem;
+  border-right: 0;
+}
+nav ul {
+  text-align: left;
+}
+nav ul li {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* #adminSubtab li {
+  padding: 2rem;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+} */
+
+nav ul li a {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  left: 30%;
+}
+
+nav ul li:hover {
+  background-color: grey;
+  opacity: 0.7;
+  border-right: 0.5rem solid white;
+}
+nav ul li:hover > .arrow {
+  transform: rotate(360deg);
+}
+/**************************************/
+
+/********** Main and inputs ***********/
+main h2 {
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  color: ivory;
+}
+#searchAndFilter {
+  padding: 1.5rem;
+}
+#searchAndFilter input {
+  width: 48%;
+  height: 3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem;
+}
+#searchAndFilter #search {
+  background: url("../images/search.png") no-repeat center right 1.5rem;
+  background-size: 1rem;
+  background-color: ivory;
+}
+#searchAndFilter #filter {
+  background: url("../images/black-arrow.png") no-repeat center right 1.5rem;
+  background-size: 1rem;
+  background-color: ivory;
+}
+/******************************************/
+
+/********** Section and articles **********/
+h5 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+article h5,
+article .artcle-content div {
+  padding: 2%;
+}
+.artcle-content .image-holder,
+.artcle-content .image-holder img,
+.artcle-content .overwiev-holder {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+.artcle-content .book-overwiev {
+  margin: 10% 0;
+  padding: 2% 10%;
+  display: block;
+  text-align: center;
+  background-color: dimgrey;
+  border-radius: 5%;
+}
+.artcle-content .overwiev-holder .name-surname {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.artcle-content .overwiev-holder p {
+  padding-bottom: 0.5rem;
+}
+/******************************************/
+
+/************ Pagination ******************/
+.pagination {
+  padding: 0 1.5rem;
+  color: ivory;
+  text-align: end;
+}
+/******************************************/
+
+/************ Footer ************/
+footer p span {
+  text-transform: uppercase;
+}
+/********************************/
+
+/************ Icons ************/
+.arrow {
+  display: block;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  right: 5%;
+  background: url("../images/arrow.png") no-repeat;
+  background-size: 1.2rem;
+  transform: rotate(270deg);
+  transition: 0.3s;
+}
+
+.home-icon,
+.categorie-icon,
+.admin-icon {
+  display: block;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  left: 10%;
+}
+.home-icon {
+  background: url("../images/home.png") no-repeat;
+  background-size: 1.2rem;
+  background-color: white;
+}
+.categorie-icon {
+  background: url("../images/categories.png") no-repeat;
+  background-size: 1.2rem;
+  background-color: white;
+}
+.admin-icon {
+  background: url("../images/admin.png") no-repeat;
+  background-size: 1.2rem;
+  background-color: white;
+}
+.login-logout-dropdown {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 21%;
+  background: url("../images/admin.png") no-repeat;
+  background-size: 2rem;
+  background-color: white;
+}
+.pagination .left-arrow,
+.pagination .right-arrow {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 1rem;
+}
+.left-arrow {
+  background: url("../images/arrow.png") no-repeat;
+  background-size: 1rem;
+  transform: rotate(90deg);
+}
+.right-arrow {
+  background: url("../images/arrow.png") no-repeat;
+  background-size: 1rem;
+  transform: rotate(270deg);
+}
+/******************************/
+.display-none {
+  display: none;
+}
+
+#formForAdding {
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapperForAddingBooks {
+  margin: 0 10%;
+}
+
+.my-form-group {
+  display: grid;
+  grid-template-columns: 20rem;
+  place-items: center;
+  grid-template-rows: 5rem;
+}
+
+.my-form-group label {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.my-form-group input,
+.my-form-group select,
+.my-form-group button,
+.my-form-group textarea {
+  height: 2rem;
+  width: 80%;
+}
+
+#saveBooks {
+  background-color: gold;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#cancelBooks {
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table-books,
+tbody {
+  width: 100%;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+
+th,
+td {
+  font-size: 1.4rem;
+}
+
+tbody {
+  background-color: white;
+  color: black;
+}
+.my-form-group label.alert {
+  color: red;
+  font-size: 1rem;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/golden-book.css" />
+    <title>Golden book</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="wrapper-for-logo-and-btn">
+        <div id="leftSidenav" class="sidenav">
+          <nav>
+            <ul>
+              <li id="homePageLink">
+                <span class="home-icon"></span><a>Homepage</a>
+              </li>
+              <li>
+                <span class="categorie-icon"></span><a>Categories </a
+                ><span class="arrow"></span>
+              </li>
+              <li id="admin">
+                <span class="admin-icon"></span><a>Admin</a>
+                <span class="arrow"></span>
+              </li>
+              <li id="adminSubtab" class="display-none"><a>Books</a></li>
+            </ul>
+          </nav>
+        </div>
+        <span id="toggleBtn" onclick="toggle()">&#9776; </span>
+        <h1 id="logo"><a href="#">Golden Book.</a></h1>
+      </div>
+      <!-- TODO: Commented code is for next implementation, now is just dummy image -->
+      <div class="login-logout-dropdown">
+        <!-- <button id="dropdownMenuBtn">
+        </button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item">Logout</a>
+        </div>-->
+      </div>
+    </header>
+    <!-- Header end -->
+    <!-- Main page -->
+    <main id="wrapper">
+      <h2>Homepage</h2>
+      <div id="searchAndFilter">
+        <input type="search" id="search" placeholder="Search by book name" />
+        <input type="search" id="filter" placeholder="Search by category" />
+      </div>
+      <section>
+        <article>
+          <h5>Money power</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/money-power.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h5>My first love</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/my-first-love.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h5>My little life</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/my-little-life.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h5>The lost trip</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/the-lost-trip.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h5>Dark</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/darkjpg.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <h5>Find me</h5>
+          <div class="artcle-content">
+            <div class="image-holder">
+              <img src="assets/images/find-me.jpg" alt="slika" />
+            </div>
+            <div class="overwiev-holder">
+              <p><span class="name-surname">Name Surname</span> 2020</p>
+              <p class="category">Category: General</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
+                non! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Velit, non!
+              </p>
+              <a href="" class="book-overwiev">Book overview</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="pagination">
+        <!-- TODO: Need to implement better logic for pagination -->
+        <p>
+          Rows per page <span class="page-number">6</span
+          ><span class="all-pages">1-6 of 104</span
+          ><span class="left-arrow"></span><span class="right-arrow"></span>
+        </p>
+      </div>
+    </main>
+    <main id="booksWrapper" style="display: none">
+      <h2>Books</h2>
+      <div class="wrapperForAddingBooks">
+        <form id="formForAdding">
+          <div class="my-form-group">
+            <label> Image URL</label>
+            <input type="text" id="url" name="url" />
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label>Title</label>
+            <input type="text" id="title" name="title" />
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label> Author</label>
+            <select name="author" id="author" name="author">
+              <option value="0"></option>
+            </select>
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label> Year</label>
+            <input type="date" max="2022-01-01" id="year" name="year" />
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label>Categories</label>
+            <select name="categories" id="categories" name="categories">
+              <option value="0"></option>
+            </select>
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label> ISBN</label>
+            <input type="text" id="isbn" name="isbn" />
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <label> Description</label>
+            <textarea name="description" id="description"></textarea>
+            <div class="error-holder"></div>
+          </div>
+          <div class="my-form-group">
+            <button type="submit" id="saveBooks">Save</button>
+            <button type="button" id="cancelBooks">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="wrapper-for-book-list">
+        <table class="table-books">
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Year</th>
+              <th>Categories</th>
+              <th>ISBN</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="bookList"></tbody>
+        </table>
+      </div>
+    </main>
+    <!-- Main page end -->
+    <footer>
+      <p>Orion inovation - <span>Angular Workshop 2022</span></p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

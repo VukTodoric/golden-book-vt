@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Golden Book</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <header>
+        <h1 class="logo">Golden Book.</h1>
+        <nav>
+          <ul id="navigation">
+            <li class="nav-links" id="login" onclick="loginPage()">Login</li>
+            <li class="nav-links" id="signUp" onclick="signUpPage()">
+              Sign Up
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="wrapper">
+        <div class="right-div" id="rightDiv">
+          <div class="quoted-message">
+            <p>
+              "If you don't like to read, you haven't found the right book."
+              <br />
+              J.K. Rowling
+            </p>
+          </div>
+          <div class="to-sign-up">
+            <h2>Find your inspiration</h2>
+            <a class="btn-to-sign-up" id="btnToSignUp" onclick="signUpPage()"
+              >Sign up</a
+            >
+          </div>
+        </div>
+        <div class="sign-up-login" id="signUpLogin" style="display: none">
+          <form action="golden-book.html" id="form">
+            <h2 id="formHeading"></h2>
+            <input type="email" placeholder="Email" name="email" id="email" />
+            <div class="error-holder"></div>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+            />
+            <div class="error-holder"></div>
+            <label><a id="alreadyHave" onclick="toggleForm()"></a></label>
+            <button type="submit" id="btnForm"></button>
+          </form>
+        </div>
+      </div>
+      <footer><small>Angular Workshop 2022</small></footer>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

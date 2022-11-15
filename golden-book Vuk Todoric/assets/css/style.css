@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  padding: 30px;
+}
+.background {
+  background-image: linear-gradient(90deg, transparent 30%, #ffffff 130%),
+    url("../images/golden-book.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: ivory;
+  border-radius: 2%;
+  padding: 30px;
+}
+header {
+  display: flex;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 7%;
+  padding: 20px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+button {
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  color: ivory;
+  font-weight: bold;
+}
+ul {
+  display: inline-flex;
+  list-style: none;
+  justify-content: flex-end;
+  position: absolute;
+  right: 7%;
+}
+.logo {
+  font-size: 45px;
+  font-weight: bold;
+}
+.quoted-message {
+  font-size: 30px;
+  text-align: right;
+  font-style: italic;
+  padding: 40px;
+}
+.to-sign-up {
+  float: right;
+  padding: 40px;
+}
+.to-sign-up :first-child {
+  margin-bottom: 30px;
+}
+.btn-to-sign-up {
+  float: right;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn-to-sign-up:hover,
+form button:hover {
+  color: ivory;
+  background-color: black;
+  transition: 0.3s ease-in;
+}
+.right-div,
+.sign-up-login {
+  width: 50%;
+  margin: 20px;
+  float: right;
+}
+.nav-links {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px;
+  padding: 15px 10px;
+}
+
+.nav-links:hover {
+  background-color: ivory;
+  transition: 0.3s ease-in;
+  color: black;
+}
+form {
+  position: absolute;
+  right: 10%;
+}
+form input,
+form button,
+.btn-to-sign-up {
+  width: 350px;
+  height: 45px;
+  margin: 15px 0;
+  display: block;
+  background-color: ivory;
+  color: black;
+  border: none;
+  padding: 10px;
+}
+form label a {
+  float: right;
+  margin-top: -5px;
+  margin-bottom: 25px;
+}
+
+.alert {
+  color: red;
+}
